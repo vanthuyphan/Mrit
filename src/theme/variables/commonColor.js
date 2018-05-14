@@ -94,7 +94,7 @@ module.exports = {
   checkboxTickColor: "#fff",
 
   // Color
-  brandPrimary: "#00C497",
+  brandPrimary: "#D4AF37",
   brandInfo: "#62B1F6",
   brandSuccess: "#5cb85c",
   brandDanger: "#d9534f",
@@ -120,7 +120,7 @@ module.exports = {
 
   // Footer
   footerHeight: 55,
-  footerDefaultBg: "#2874F0",
+  footerDefaultBg: "#D4AF37",
 
   // FooterTab
   tabBarTextColor: "#8bb3f4",
@@ -132,7 +132,7 @@ module.exports = {
 
   // Header
   toolbarBtnColor: "#fff",
-  toolbarDefaultBg: "#00C497",
+  toolbarDefaultBg: "#D4AF37",
   toolbarHeight: platform === "ios" ? 64 : 56,
   toolbarIconSize: platform === "ios" ? 20 : 22,
   toolbarSearchIconSize: platform === "ios" ? 20 : 23,
@@ -141,7 +141,7 @@ module.exports = {
   toolbarInverseBg: "#222",
   toolbarTextColor: "#fff",
   iosStatusbar: "light-content",
-  toolbarDefaultBorder: "#00C497",
+  toolbarDefaultBorder: "#D4AF37",
   get statusBarColor() {
     return color(this.toolbarDefaultBg).darken(0.2).hex();
   },
@@ -192,7 +192,7 @@ module.exports = {
   listNoteSize: 13,
 
   // Progress Bar
-  defaultProgressColor: "#00C497",
+  defaultProgressColor: "#D4AF37",
   inverseProgressColor: "#384850",
 
   // Radio Button
@@ -217,7 +217,7 @@ module.exports = {
   inverseSpinnerColor: "#384850",
 
   // Tab
-  tabDefaultBg: "#00C497",
+  tabDefaultBg: "#D4AF37",
   topTabBarTextColor: "#fff",
   topTabBarActiveTextColor: "#fff",
   topTabActiveBgColor: platform === "ios" ? "#1569f4" : undefined,

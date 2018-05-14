@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {ImageBackground, View} from "react-native";
-import {connect} from "react-redux";
 import {
   Container,
   Header,
@@ -16,7 +15,7 @@ import styles from "./styles";
 
 const glow2 = require("../../../assets/glow2.png");
 
-class Icons extends Component {
+export default class Icons extends Component {
   render() {
     const navigation = this.props.navigation;
     return (
@@ -131,4 +130,3 @@ class Icons extends Component {
   }
 }
 
-export default connect()(Icons);

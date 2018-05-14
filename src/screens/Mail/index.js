@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {ImageBackground} from "react-native";
-import {connect} from "react-redux";
 import {
   Container,
   Header,
@@ -23,7 +22,7 @@ import styles from "./styles";
 const glow2 = require("../../../assets/glow2.png");
 const sanket = require("../../../assets/contacts/sanket.png");
 
-class Mail extends Component {
+export default class Mail extends Component {
   render() {
     const navigation = this.props.navigation;
     return (
@@ -102,5 +101,3 @@ class Mail extends Component {
     );
   }
 }
-
-export default connect()(Mail);

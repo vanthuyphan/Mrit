@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {ImageBackground, Platform} from "react-native";
-import {connect} from "react-redux";
 import {
   Container,
   Header,
@@ -23,7 +22,7 @@ import styles from "./styles";
 const commonColor = require("../../theme/variables/commonColor");
 const glow2 = require("../../../assets/glow2.png");
 
-class Form extends Component {
+export default class Form extends Component {
   render() {
     const navigation = this.props.navigation;
     return (
@@ -146,4 +145,3 @@ class Form extends Component {
   }
 }
 
-export default connect()(Form);

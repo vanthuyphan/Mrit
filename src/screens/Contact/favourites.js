@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import {
   Content,
   Text,
@@ -15,7 +14,7 @@ const sanket = require("../../../assets/contacts/sanket.png");
 const pratik = require("../../../assets/contacts/pratik.png");
 const megha = require("../../../assets/contacts/megha.png");
 
-class Favourites extends Component {
+export default class Favourites extends Component {
   render() {
     return (
       <Content style={{ backgroundColor: commonColor.containerBackground }}>
@@ -53,4 +52,3 @@ class Favourites extends Component {
   }
 }
 
-export default connect(null)(Favourites);

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import {
   Content,
   Text,
@@ -14,7 +13,7 @@ const commonColor = require("../../theme/variables/commonColor");
 const sanket = require("../../../assets/contacts/sanket.png");
 const pratik = require("../../../assets/contacts/pratik.png");
 
-class Recent extends Component {
+export default class Recent extends Component {
   render() {
     return (
       <Content style={{ backgroundColor: commonColor.containerBackground }}>
@@ -42,5 +41,3 @@ class Recent extends Component {
     );
   }
 }
-
-export default connect(null)(Recent);

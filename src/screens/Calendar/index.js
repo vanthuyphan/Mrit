@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {ImageBackground} from "react-native";
-import {connect} from "react-redux";
 import {
   Container,
   Header,
@@ -23,7 +22,7 @@ type Props = {
   day: string
 }
 
-class Calendar extends Component {
+export default class Calendar extends Component {
   state: {
     date: Object,
     selected: string
@@ -90,5 +89,3 @@ class Calendar extends Component {
     );
   }
 }
-
-export default connect()(Calendar);

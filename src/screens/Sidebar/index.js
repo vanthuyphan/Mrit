@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import {
   Text,
   Icon,
@@ -20,7 +19,7 @@ const resetAction = NavigationActions.reset({
   actions: [NavigationActions.navigate({ routeName: "Login" })]
 });
 
-class SideBar extends Component {
+export default class SideBar extends Component {
   render() {
     const navigation = this.props.navigation;
     return (
@@ -174,5 +173,3 @@ class SideBar extends Component {
     );
   }
 }
-
-export default connect()(SideBar);

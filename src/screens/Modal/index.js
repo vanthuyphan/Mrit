@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {ImageBackground, View} from "react-native";
-import {connect} from "react-redux";
 import Modal from "react-native-modalbox";
 import {
   Container,
@@ -19,7 +18,7 @@ import styles from "./styles";
 const commonColor = require("../../theme/variables/commonColor");
 const glow2 = require("../../../assets/glow2.png");
 
-class ModalNSP extends Component {
+export default class ModalNSP extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -134,5 +133,3 @@ class ModalNSP extends Component {
     );
   }
 }
-
-export default connect()(ModalNSP);

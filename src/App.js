@@ -55,5 +55,5 @@ const App = StackNavigator(
 
 export default () =>
   <Root>
-    <App />
+      <App />
   </Root>;

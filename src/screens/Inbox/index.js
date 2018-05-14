@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {ImageBackground, View} from "react-native";
-import {connect} from "react-redux";
 import {
   Container,
   Header,
@@ -21,7 +20,7 @@ import data from "./data.js";
 
 const glow2 = require("../../../assets/glow2.png");
 
-class Inbox extends Component {
+export default class Inbox extends Component {
   render() {
     const navigation = this.props.navigation;
     return (
@@ -80,5 +79,3 @@ class Inbox extends Component {
     );
   }
 }
-
-export default connect()(Inbox);

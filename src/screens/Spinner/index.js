@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {ImageBackground} from "react-native";
-import {connect} from "react-redux";
 import {
   Container,
   Header,
@@ -22,7 +21,7 @@ import styles from "./styles";
 const commonColor = require("../../theme/variables/commonColor");
 const glow2 = require("../../../assets/glow2.png");
 
-class SpinnerNSP extends Component {
+export default class SpinnerNSP extends Component {
   render() {
     const navigation = this.props.navigation;
     return (
@@ -90,5 +89,3 @@ class SpinnerNSP extends Component {
     );
   }
 }
-
-export default connect()(SpinnerNSP);

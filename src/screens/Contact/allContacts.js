@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import {
   Content,
   Text,
@@ -18,7 +17,7 @@ const megha = require("../../../assets/contacts/megha.png");
 const atul = require("../../../assets/contacts/atul.png");
 const saurav = require("../../../assets/contacts/saurav.png");
 
-class AllContacts extends Component {
+export default class AllContacts extends Component {
   render() {
     return (
       <Content style={{ backgroundColor: commonColor.containerBackground }}>
@@ -83,4 +82,3 @@ class AllContacts extends Component {
   }
 }
 
-export default connect(null)(AllContacts);
